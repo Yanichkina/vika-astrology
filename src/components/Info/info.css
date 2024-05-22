@@ -1,0 +1,21 @@
+.info {
+    height: 50vh;
+    width: clamp(12.5rem, -1.136rem + 68.18vw, 50rem);
+    color: #eccf90cc;
+    text-align: center;
+    font-size: clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem);
+    margin-top: 200px;
+    padding-left: 13%;
+    padding-top: 10%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        padding-top: 0;
+        padding-left: 15%;
+    }
+}
+
+
+

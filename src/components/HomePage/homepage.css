@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+.home_page {
+    height: 100vh;
+    position: relative; /* Добавляем позиционирование */
+    overflow: hidden; /* Чтобы изображение не выходило за пределы .home_page */
+
+}
+
+
+.home_text {
+    display: block;
+    width: clamp(6.25rem, -2.841rem + 45.45vw, 31.25rem);
+    padding-top: 8%;
+    padding-left: 50%;
+    /* font-size: clamp(min, curr, max); */
+    font-size: clamp(16px, 2vw, 40px);
+    text-align: center;
+    color: #eccf90cc;
+    text-shadow: 1px 1px 2px black;
+}
+
+.p-astro {
+    color: #9e502c;
+  }
+
+.p-vika {
+    color: #9e502c;
+    font-size: 40px;
+  }
+
+.btn {
+    position: absolute;
+    padding-bottom: 10%;
+    padding-left: 60%; 
+}
+
+.btn ul {
+    list-style: none;
+    padding: 0;   
+}
+
+.btn li {
+    margin-bottom: 25px;
+}
+
+.btn a {
+    display: block;
+    width: clamp(4.375rem, 1.42rem + 14.77vw, 12.5rem);
+    height: clamp(1.125rem, 0.966rem + 0.8vw, 1.563rem);
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, rgb(186 164 73), #0e0101e6);
+    background-color: rgb(155 127 19);
+    color: #eccf90cc;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+    transition: transform 0.7s, background-color 0.7s;
+}
+
+.btn a:hover {
+    transform: scale(1.1);
+    background-color: darkgoldenrod;
+    color: #f7e5bfcc
+}
+
+@media screen and (max-width: 768px) {
+    .home_text {
+        justify-content: center;
+        text-align: right;
+        padding-left: 30%;
+        width: 70%;
+        padding-top: 5%;
+    }
+    .btn ul {
+        padding-right: 100px;
+        right: 100px;
+    }
+    .btn a {
+        padding-right: 100px;
+    }
+    .home_page {
+        padding-bottom: 0;
+    }
+}

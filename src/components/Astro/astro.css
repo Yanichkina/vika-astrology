@@ -1,0 +1,87 @@
+.about_astrology {
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+
+.column {
+    width: clamp(300px,25%,300px);
+    height:clamp(clamp(12.5rem, 7.955rem + 22.73vw, 25rem));
+    text-align: center;
+    color: wheat;
+    margin-top: 20px;
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(140, 114, 57, 0.8), rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    font-size: clamp(1rem, 0.795rem + 1.02vw, 1.563rem);
+    line-height: 1.6;
+    transition: transform 0.7s, background-color 0.7s;
+    
+}
+
+.column .show {
+  opacity: 1;
+}
+
+.column:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(140, 114, 57, 0.8), rgba(0, 0, 0, 0.8) 0%, rgba(140, 114, 57, 0.8) 35%, rgba(0, 0, 0, 0.8) 100%);
+  animation: gradient 20s ease infinite;
+  background-size: 150% 200%;
+}
+
+
+.btn_astro {
+  
+  transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    bottom: -70%;
+    left: calc(50%-200px); 
+
+    display: block;
+    width: 350px;
+    height: 30px;
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, rgb(186 164 73), #0e0101e6);
+    background-color: rgb(155 127 19);
+    color: #eccf90cc;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: clamp(0.938rem, 0.869rem + 0.34vw, 1.125rem);
+    transition: transform 0.7s, background-color 0.7s;
+}
+
+.btn_astro:hover {
+    transform: scale(1.1);
+    background-color: darkgoldenrod;
+    color: #f7e5bfcc
+}
+
+@media screen and (max-width: 768px) {
+  .about_astrology {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+  }
+
+  .column {
+      width: 90%;
+      margin-top: 20px;
+  }
+
+  .btn_astro {
+      width: 50%;
+      margin-top: 100%;
+      margin-left: 17%;
+      top: 160%;
+}
+
+}

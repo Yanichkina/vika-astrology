@@ -1,0 +1,69 @@
+
+
+.tarot {
+   
+    display: inline-block;
+    justify-content: space-around;
+    
+    
+}
+
+.text_taro {
+    width: clamp(15.625rem, 3.125rem + 62.5vw, 50rem);
+    color: #f4e3c0cc;
+    padding-bottom: 50px;
+    text-align: right;
+    font-size: clamp(1.063rem, 0.994rem + 0.34vw, 1.25rem);
+    padding-left: 250px;
+}
+
+.text_taro p {
+    transition: transform 0.7s, background-color 0.7s;
+}
+
+
+
+.text_taro p:hover {
+    transform: scale(1.1);
+}
+
+.btn_taro {
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 25px;
+      padding: 15px 30px;
+      background-image: linear-gradient(to right, rgb(186 164 73), #0e0101e6);
+      background-color: rgb(155 127 19);
+      color: #eccf90cc;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 25px;
+      font-family: "Nanum Gothic", sans-serif;
+      
+      font-size: clamp(0.938rem, 0.869rem + 0.34vw, 1.125rem);
+      transition: transform 0.7s, background-color 0.7s;
+      right: 20%;
+  }
+  
+  .btn_taro:hover {
+      transform: scale(1.1);
+      color: #f7e5bfcc
+  }
+
+  
+  
+@media screen and (max-width: 768px) {
+    .text_taro {
+        padding-top: 0;
+        padding-left: 70px;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn_taro {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        left: 32%;
+    }
+}
